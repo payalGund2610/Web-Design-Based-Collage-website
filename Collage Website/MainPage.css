@@ -1,0 +1,528 @@
+body {
+	overflow: scroll;
+	background-color: white;
+	background-size: cover;
+	display: flex;
+	height: 100vh;
+}
+
+header {
+	z-index: 100;
+	top: 0px;
+	font-size: 40px;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	position: fixed;
+	background-color: #555;
+}
+
+header a {
+	margin-left: 30px;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding-left: 10px;
+}
+
+/*  */
+
+header input {
+	padding-left: 60px;
+	margin-left: 50px;
+	height: 33px;
+}
+
+header button a {
+	margin: 0px;
+	color: white;
+}
+
+main {
+	margin-top: 10px;
+	width: auto;
+	left: 200px;
+	overflow: hidden;
+}
+
+#navbar {
+	width: 200px;
+	background-color: #555;
+	padding: 10px;
+	color: white;
+	font-size: 20px;
+	margin-top: 40px;
+	position: fixed;
+	height: 100%;
+	overflow: scroll;
+	/* backdrop-filter: blur(15px); */
+}
+
+#navbar a {
+	display: block;
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#navbar a:hover {
+
+	background-color: #555;
+	color: #fafa0a;
+	/* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+	box-shadow: 0 0 10px #fdec07;
+	text-shadow: 0 0 5px #ffee10;
+}
+
+/* Style for the horizontal divs */
+#horizontal-container {
+	margin-left: 35%;
+	display: flex;
+	z-index: 100;
+}
+
+.horizontal-div {
+	height: 150px;
+	width: 150px;
+	padding: 0px;
+	border: 1px solid #ccc;
+	margin: 10px;
+	text-align: center;
+}
+
+.horizontal-div:hover {
+	box-shadow: 0 5px 35px 0px rgba(237, 22, 22, 0.1);
+}
+
+.intro {
+	background-image: url(computerPhoto.jpg);
+	background-size: cover;
+	width: 1100px;
+	height: 650px;
+	margin-left: 220px;
+}
+
+.intro .message {
+	height: 100px;
+	width: 450px;
+	padding-top: 50px;
+	margin-left: 55%;
+	text-align: center;
+	font-size: 33px;
+	color: #f0f3fa;
+}
+
+.intro .thought {
+	height: 100px;
+	width: 250px;
+	margin-top: 340px;
+	margin-left: 70%;
+	text-align: center;
+	font-size: 45px;
+
+}
+
+.about-us img {
+	width: 24%;
+	float: left;
+}
+
+.about-us div {
+	width: 70%;
+	margin-left: 250px;
+	line-height: 35px;
+}
+
+.Second {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	height: 450px;
+	margin-left: 250px;
+}
+
+.mathematic {
+	margin-left: 20px;
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	border-radius: 50%;
+	animation: rotate 15s linear;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.mathematic:hover {
+	transform: scale(1.1);
+	color: #ffee10;
+}
+
+.mathematic img {
+	size-adjust: auto;
+	width: 200px;
+	height: 200px;
+	border-radius: 40%;
+}
+
+.electronic {
+	margin-left: 140px;
+	width: 200px;
+	height: 200px;
+
+	background-color: black;
+	/* border-style: dotted; */
+	border-radius: 50%;
+	/* border-color: blue; */
+	animation: rotate 15s linear;
+}
+
+.electronic:hover {
+	transform: scale(1.1);
+	color: #ffee10;
+}
+
+.electronic img {
+	size-adjust: auto;
+	width: 200px;
+	height: 200px;
+	border-radius: 40%;
+}
+
+.computer {
+	margin-left: 140px;
+	width: 200px;
+	height: 200px;
+
+	background-color: black;
+	/* border-style: dotted; */
+	border-radius: 50%;
+	/* border-color: blue; */
+	animation: rotate 15s linear;
+}
+
+.computer:hover {
+	transform: scale(1.1);
+	color: #ffee10;
+}
+
+.computer img {
+	size-adjust: auto;
+	width: 200px;
+	height: 200px;
+	border-radius: 40%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.event {
+	width: 30%;
+	margin-left: 250px;
+	float: left;
+}
+
+.event div {
+	/* padding:10px; */
+	background-color: #f0f3fa;
+}
+
+.event ul li {
+	margin-bottom: 20px;
+	width: 100%;
+	float: left;
+}
+
+/********** Testimonial CSS Starts **********/
+
+.main-section {
+	overflow: hidden;
+}
+
+.review {
+	width: 100%;
+	margin-left: 220px;
+}
+
+.heading {
+	font-size: 40px;
+	border-bottom: 3px solid #0bf32a;
+	border-top: 3px solid #0bf32a;
+	margin-bottom: 25px;
+	color: #0924f0;
+}
+
+.testimonial {
+	width: 380px;
+	float: left;
+	margin-right: 10px;
+	/* overflow: hidden; */
+}
+
+.testimonial-text {
+	background: #f0f3fa;
+	padding: 20px;
+	line-height: 35px;
+	border-radius: 10px;
+}
+
+.testimonial-detail {
+	float: left;
+	margin-top: 10px;
+}
+
+.testimonial-img {
+	float: left;
+}
+
+.testimonial-img img {
+	border-radius: 50%;
+}
+
+.testimonial-name {
+	margin-left: 10px;
+	float: left;
+}
+
+.testimonial-name h5 {
+	font-size: 18px;
+	margin-top: 8px;
+}
+
+/****************TESTIMONIAL SECTION****************/
+.testimonial {
+	width: 30.8%;
+	float: left;
+	margin-right: 2.5%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.testimonial-text {
+	background: #0055a40f;
+	padding: 20px;
+	line-height: 35px;
+	border-radius: 10px;
+	font-size: 18px;
+	text-align: center;
+	border: 1px solid #0055a4;
+
+}
+
+.testimonial-detail {
+	float: left;
+	margin-top: 10px;
+}
+
+.testimonial-img {
+	float: left;
+}
+
+.testimonial-name {
+	margin-left: 10px;
+	float: left;
+}
+
+.testimonial-name h5 {
+	font-size: 18px;
+	margin-top: 8px;
+}
+
+.footer {
+	background-color: #b5bdd0;
+	padding: 40px 0px;
+	width: 100%;
+	float: left;
+}
+
+.footer-logo {
+	height: 50px;
+	width: 40;
+}
+
+.footer-fblogo img {
+	margin-left: 47%;
+	width: 70px;
+}
+
+.footer-call img {
+	border-radius: 50%;
+	margin-left: 35%;
+	height: 20px;
+	width: 20px;
+}
+
+.footer-email img {
+	border-radius: 50%;
+	margin-left: 35%;
+	height: 20px;
+	width: 20px;
+}
+
+.footer-sect {
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+.footer-sect a {
+	color: #202020;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+/* Laptop view styles */
+@media (min-width: 768px) {
+	maincode { 
+		font-size: 1rem;
+	}
+
+}
+
+/* Mobile view styles */
+@media (max-width: 767px) {
+	maincode {
+		width: 90%;
+		margin: 20px auto;
+		background-color: #fff; 
+		border-radius: 8px;
+		 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+}
+.s-hidden {
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  
+  .select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font: normal 11px/22px Arial, Sans-Serif;
+    color: black;
+    border: 1px solid #ccc;
+  }
+  
+  .styledSelect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  
+  .styledSelect:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 9px;
+    right: 6px;
+  }
+  
+  .styledSelect:active,
+  .styledSelect.active {
+    background-color: #eee;
+  }
+  
+  .options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .options li {
+    padding: 0 6px;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+  
+  .options li:hover {
+    background-color: #39f;
+    color: white;
+  }
+
+.glow-on-hover {
+	font-family: 'Times New Roman', Times, serif;
+    width: 112px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #555454;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

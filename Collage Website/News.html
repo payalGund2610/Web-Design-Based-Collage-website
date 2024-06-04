@@ -1,0 +1,48 @@
+<html>
+<head>
+	<style>
+		.news{
+			height: 100%;
+			width: 100%;
+			display: flex;
+		}
+		.news img {
+			margin-top: 20px;
+			height: 500px;
+            width: 400px;
+			filter: grayscale(100%);
+			-webkit-filter: grayscale(100%);
+		}
+
+		.news img:hover {
+			filter: grayscale(0%);
+			filter: gray;
+			-webkit-filter: grayscale(0%);
+			filter: none;
+			transition: 1s ease;
+		}
+
+		.inner{
+			/* margin-left: 150px; */
+			height: 100%;
+			width: 100%;
+		}
+
+		.inner img{
+			height: 250px;
+			width: 600px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="news">
+		<img src="news-3.jpg" alt="" style="width: 600px;">
+		<img src="news-4.jpg" alt="" style="width: 600px;">
+		
+		<div class="inner">
+			<img src="news-1.jpg" alt="" >
+        	<img src="news-2.jpg" alt="" >
+		</div>
+	</div>
+</html>

@@ -1,0 +1,205 @@
+
+<!-- https://www.proglobalbusinesssolutions.com/css-hover-effects/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+            font-family: 'Acme';
+        }
+
+        .container {
+            
+            max-width: 1000px;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            border: 3px solid black;
+            position: relative;
+            margin: 20px 0;
+            width: 300px;
+            height: 400px;
+            background: #fff;
+            transform-style: preserve-3d;
+            transform: perspective(2000px);
+            transition: 1s;
+            box-shadow: inset 100px 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover {
+            z-index: 1111;
+            transform: perspective(2000px) rotate(-10deg);
+            box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .card .img-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            transform-origin: left;
+            z-index: 1;
+            transition: 1s;
+        }
+
+        .card .img-container img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card:hover .img-container {
+            transform: rotateY(-135deg);
+        }
+
+        .card .card-details {
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-sizing: border-box;
+            padding: 20px;
+            color: #000;
+        }
+
+        .card .card-details h2 {
+            margin: 0;
+            padding: 0.5em 0;
+            text-transform: uppercase;
+            font-size: 2em;
+            color: #ed1b1b;
+        }
+
+        .card .card-details p {
+            margin: 0;
+            padding: 0;
+            line-height: 30px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img-container">
+                <img src="saddam sir.jpg" alt="S.A" />
+            </div>
+            <div class="card-details">
+                <h2><i>Prof. Maniyar.S.A </i></h2>
+                <p>
+                    Qualification:M.Sc(Computer Science) <br>
+                    Department:Computer Science <br>
+                    Mobile No: 7972447733 <br>
+                    Email Id:saddammaniyar79@gmail.com <br>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img src="gavde sir.jpg" alt="" />
+            </div>
+            <div class="card-details">
+                <h2><i>Prof. Gavade.N.M</i></h2>
+                <p>
+                    Qualification:M.Sc(Electronics) <br>
+                    Department:Computer Science <br>
+                    Mobile No: 9552374747 <br>
+                    Email Id:nileshgavade@gmail.com <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="dipak sir.jpg" alt="" />
+            </div>
+            <div class="card-details">
+                <h2><i>Prof. Sable.D.L</i></h2>
+                <p>
+                    Qualification:B.E(Mech),<br>M.Sc(Mathematics) <br>
+                    Department:Computer Science <br>
+                    Mobile No: 9850478267 <br>
+                    Email Id:dipaksable400@gmail.com <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="anushka mam.jpg" alt="" />
+            </div>
+            <div class="card-details">
+                <h2><i>Prof.Auti.A.G</i></h2>
+                <p>
+                    Qualification:B.E(Computer Science) <br>
+                    Department:Computer Science <br>
+                    Mobile No: 9834046874 <br>
+                    Email Id:autianushka2018@gmail.com <br>
+                </p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="img-container">
+                <img src="usha mam.jpg" alt="" />
+            </div>
+            <div class="card-details">
+                <h2><i>Prof.Nimse U.R</i></h2>
+                <p>
+                    Qualification:M.Sc(Computer Science) <br>
+                    Department:Computer Science <br>
+                    Mobile No: 8669363547 <br>
+                    Email Id:ushanimse@gmail.com <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="kirti mam.jpg" alt="" />
+            </div>
+            <div class="card-details">
+                <h2><i>Prof.Shinde.K.A</i></h2>
+                <p>
+                    Qualification:M.Sc(Statistics) <br>
+                    Department:Statistics <br>
+                    Mobile No: 7796121200 <br>
+                    Email Id:shindekirti779@gmail.com <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="jadhv mam.jpg" alt="" />
+            </div>
+            <div class="card-details">
+                <h2><i>Prof. Jadhav.R.A</i></h2>
+                <p>
+                    Qualification:B.E(E & T) <br>
+                    Department:Electronics <br>
+                    Mobile No: 9373739810 <br>
+                    Email Id:rajshreejs34@gmail.com <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

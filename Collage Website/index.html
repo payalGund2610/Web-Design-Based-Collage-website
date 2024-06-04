@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background-image: url(image.jpg);
+                background-size: cover;
+                background-position: left;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                cursor: pointer;
+                animation: fadeIn 4s infinite alternate;
+                }
+                @keyframes fadeIn {
+                    25% {
+                        opacity: 1;
+                    }
+                    50% {
+                        opacity: 0;
+                    }
+                    75% {
+                        opacity: 1;
+                    }
+                }
+            .topnav{
+                color: #fff;;
+                position:absolute;
+                margin-top: 60px;
+                height: 60px;
+                bottom: 35%;
+                font-size:xx-large;
+                right: 0%;
+                left: 40px;
+                background-color:transparent;
+            }
+            .preloader{
+                width: 336px; /* Set the desired width */
+                height: 321px; /* Set the desired height */
+                border-radius: 60%; /* Create a circular shape */
+                overflow: hidden;
+                position:absolute;
+                top: 10px;
+                left: 470px;
+            }
+            .topnav a.active {
+                padding-right: 400px;
+                margin-top: 30px;
+                padding-left: 800px;
+                color: #fff;
+                background-color:transparent;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                background-color: #3498db;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease-in-out;
+              }
+
+              button:hover {
+                background-color: #2980b9;
+              }
+        </style>
+    </head>
+    <body>
+        
+            <div class="preloader">
+                <img src="logo-2 .jpg" alt="Samarth BCS" >
+            </div>
+            <header  class="topnav">
+                <h1>Samarth College Of Computer Science</h1>
+            </header> 
+                  <script>
+                    setTimeout(function() {
+                      window.location.href = 'LoginPage.html'; 
+                    }, 3000);
+                  </script> 
+    </body>
+</html>
